@@ -1,0 +1,24 @@
+/* small mobile */
+@media screen and (max-width: 575px){
+    
+}
+/* big mobile */
+@media screen and (min-width: 576px) {
+    
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+}
+/* l desktop */
+@media screen and (min-width: 992px) {
+    
+}
+/* xl desktop */
+@media screen and (min-width:1200px) {
+    
+}
+/* xxl desktop*/
+@media screen and (min-width: 1400px) {
+    
+}

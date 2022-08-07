@@ -1,0 +1,369 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  font-size: 100%;
+  font-family: 'Manrope', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bree Serif', serif;
+}
+
+main,
+section,
+header,
+div,
+footer,
+figure,
+nav,
+aside,
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main > header {
+  height: 70px;
+}
+
+#main > header .row {
+  height: 100%;
+}
+
+#main > header .row > * {
+  height: 100%;
+}
+
+#main > header .row > figure {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+}
+
+#main > header .row > nav:nth-of-type(1) ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#main > header .row > nav:nth-of-type(1) ul > li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px;
+}
+
+#main > header .row > nav:nth-of-type(1) ul > li > a {
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+  transition: 1s;
+}
+
+#main > header .row > nav:nth-of-type(1) ul > li > a::after {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -50;
+  background-color: #bbbbbb;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+#main > header .row > nav:nth-of-type(1) ul > li > a:hover {
+  color: #bbbbbb;
+}
+
+#main > header .row > nav:nth-of-type(1) ul > li > a:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+#main > header .row > nav:nth-of-type(2) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main > header .row > nav:nth-of-type(2) > span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#main > header .row > section {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main > header .row > section > i {
+  font-size: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#main > header .row > section > i:hover {
+  color: #bbbbbb;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+main > section:nth-of-type(2) > section > * {
+  color: white;
+  background-color: black;
+  text-transform: capitalize;
+}
+
+main > section:nth-of-type(2) > section > div > h1 {
+  font-size: 35px;
+  padding: 90px 20px 20px 60px;
+}
+
+main > section:nth-of-type(2) > section > div > p {
+  text-decoration: underline;
+  padding: 10px 20px 50px 60px;
+}
+
+main > section:nth-of-type(2) > section > div > div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(2) > section > div > div > video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 20px;
+}
+
+main > section:nth-of-type(3) > section {
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0px;
+}
+
+main > section:nth-of-type(4) > section {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(4) > section > div > h2 {
+  color: white;
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 50px 0px 0px 30px;
+}
+
+main > section:nth-of-type(4) > section > div > figure {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0px;
+}
+
+main > section:nth-of-type(5) > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(5) > section > div > h2 {
+  color: #555555;
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 50px 0px 0px 30px;
+}
+
+main > section:nth-of-type(5) > section > div > section > div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0px;
+}
+
+main > section:nth-of-type(5) > section > div > section > div > figure {
+  overflow: hidden;
+}
+
+main > section:nth-of-type(5) > section > div > section > div > figure > img {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main > section:nth-of-type(5) > section > div > section > div > figure > img:hover {
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+}
+
+main > section:nth-of-type(6) > section {
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(6) > section > div > h2 {
+  color: #555555;
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 90px 0px 0px 30px;
+}
+
+main > section:nth-of-type(6) > section > div > section > div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0px 70px 0px;
+}
+
+main > section:nth-of-type(7) > section {
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(7) > section > div > section:nth-of-type(1) > h3 {
+  font-size: 35px;
+  color: #eeeeee;
+  text-transform: uppercase;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(7) > section > div > section:nth-of-type(1) > h4 {
+  font-size: 25px;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 45px;
+}
+
+main > section:nth-of-type(7) > section > div > section:nth-of-type(2) > h5 {
+  font-size: 20px;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 75px 0px 25px 0px;
+}
+
+main > section:nth-of-type(7) > section > div > section:nth-of-type(2) > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main > section:nth-of-type(7) > section > div > section:nth-of-type(2) > div > i {
+  font-size: 30px;
+  padding: 0px 5px 85px 0px;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main > section:nth-of-type(7) > section > div > section:nth-of-type(2) > div > i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: drop-shadow(2px 2px 10px yellow);
+          filter: drop-shadow(2px 2px 10px yellow);
+}
+/*# sourceMappingURL=master.css.map */
